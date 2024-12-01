@@ -4,7 +4,7 @@ from collections import Counter
 import time
 
 # Dynamically get the day number from the filename
-day = get_day_from_filename(os.path.basename(__file__))  # Pass the script's own filename
+day = get_day_from_filename(os.path.basename(__file__))
 
 # Fetch the input for the current day
 input_data = fetch_input(day)

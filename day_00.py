@@ -8,7 +8,7 @@ import time
 
 #FETCHING INPUTS
 
-day = get_day_from_filename(os.path.basename(__file__))  # Pass the script's own filename
+day = get_day_from_filename(os.path.basename(__file__))
 
 
 input_data = fetch_input(day)
