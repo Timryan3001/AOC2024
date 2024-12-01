@@ -51,10 +51,10 @@ column2_counts = Counter(column2)
 # Find occurrences of numbers in column1 within column2
 occurrences = {num: column2_counts[num] for num in column1}
 
-# Step 3: Multiply each number in column1 by its occurrences in column2
+# Multiply each number in column1 by its occurrences in column2
 multiplications = [col1 * column2_counts[col1] for col1 in column1]
 
-# Step 4: Sum up the results
+# Sum up the results
 part2_sol = sum(multiplications)
 
 end_time_p2 = time.time()
