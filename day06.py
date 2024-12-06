@@ -134,13 +134,10 @@ for y, row in enumerate(grid):
         break
 
 # Use the visited positions from the first part
-visited_positions = {(x, y) for x, y in visited_positions}  # Assume you already have this from Part 1
+visited_positions = {(x, y) for x, y in visited_positions}
 
 # Find valid positions for obstruction
 valid_positions = find_loop_positions(grid, start_x, start_y, visited_positions)
-
-# Output results
-print("Number of valid obstruction positions:", len(valid_positions))
 
 
 end_time_p2 = time.time()
